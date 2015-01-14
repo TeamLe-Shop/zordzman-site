@@ -1,0 +1,124 @@
+diff --git a/kak_lvl.html b/kak_lvl.html
+index 1b64f80..1b0109f 100644
+--- a/kak_lvl.html
++++ b/kak_lvl.html
+@@ -24,12 +24,26 @@ body
+ <h1 align=center>Zordzman Wiki</h1>
+ <h2 align=center><a href="index.html">Main Page</a> - <a href="maps.html">Maps</a> - kak.lvl</h2>
+ 
+-<img src="imgs/kak_lvl.png" align=right>
+ 
+ <code>kak.lvl</code> is a 5x5 test level in Zordzman.
+ 
+ It contains a diagonal pattern of flowers in the middle of a grass square.
+ 
++<table border=2px>
++    <tr>
++    <td>Area</td>
++    <td>Size</td>
++    <td>MD5 hash</td>
++    </tr>
++    <tr>
++    <td>5 x 5</td>
++    <td>29 bytes</td>
++    <td><code>a9531495903a650967c81781c1694d05</code></td>
++    </tr>
++</table>
++
++<img src="imgs/kak_lvl.png">
++
+ </body>
+ 
+ </html>
+diff --git a/kek_lvl.html b/kek_lvl.html
+index ade3133..967dfef 100644
+--- a/kek_lvl.html
++++ b/kek_lvl.html
+@@ -24,13 +24,26 @@ body
+ <h1 align=center>Zordzman Wiki</h1>
+ <h2 align=center><a href="index.html">Main Page</a> - <a href="maps.html">Maps</a> - kek.lvl</h2>
+ 
+-<img src="imgs/kek_lvl.png" align=right>
+-
+ <code>kek.lvl</code> is a test level created in the early Zordzman period.
+ It is 25 x 19, designed to roughly fit the whole screen.
+ 
+ It is mostly grass, with a few tiles of water and flowers.
+ 
++<table border=2px>
++    <tr>
++    <td>Area</td>
++    <td>Size</td>
++    <td>MD5 hash</td>
++    </tr>
++    <tr>
++    <td>25 x 19</td>
++    <td>479 bytes</td>
++    <td><code>9e82a9515f854e01b3a7d16e5160f5d7</code></td>
++    </tr>
++</table>
++
++<img src="imgs/kek_lvl.png">
++
+ </body>
+ 
+ </html>
+diff --git a/server.html b/server.html
+index 93cac94..81e0831 100644
+--- a/server.html
++++ b/server.html
+@@ -9,6 +9,11 @@ body
+     background-color:#f0f0f0
+ }
+ 
++p
++{
++    padding: 0px 15px
++}
++
+ #rectangle {
+     width: 500px;
+     background: #e0e0e0;
+@@ -16,7 +21,7 @@ body
+ }
+ </style>
+ 
+-<title> kek.lvl </title>
++<title> Server </title>
+ 
+ </head>
+ 
+@@ -24,7 +29,8 @@ body
+ <h1 align=center>Zordzman Wiki</h1>
+ <h2 align=center><a href="index.html">Main Page</a> - Server</h2>
+ 
+-The server is a game server that clients (players) can join.
++The server is a game server that clients (players) can join, and is bound to
++interface <code>0.0.0.0</code> (listens on all interfaces).
+ The server is ran through the command line.<br>
+ Example:<br><img src="imgs/server_osx.png">
+ 
+@@ -39,6 +45,23 @@ cd path-to-server-binary
+ 
+ It will not run if no map is given (through --map).
+ 
++<h3> Server arguments: </h3>
++<pre>--map &ltmapfile&gt</pre>
++<p>
++This will set the starting map for the server.
++The file must exist and not be a folder.
++The map file will be <code>&ltmapfile&gt</code>.
++This argument is required for the server to start.
++</p>
++<pre>--port &ltport&gt</pre>
++<p>
++This will set the port to listen on. If this is not given, the default port is
++<code>4544</code>.
++</p>
++<pre>--help</pre>
++<p>
++Displays help message.
++</p>
+ </body>
+ 
+ </html>

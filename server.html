@@ -9,6 +9,11 @@ body
     background-color:#f0f0f0
 }
 
+p
+{
+    padding: 0px 15px
+}
+
 #rectangle {
     width: 500px;
     background: #e0e0e0;
@@ -16,7 +21,7 @@ body
 }
 </style>
 
-<title> kek.lvl </title>
+<title> Server </title>
 
 </head>
 
@@ -24,7 +29,8 @@ body
 <h1 align=center>Zordzman Wiki</h1>
 <h2 align=center><a href="index.html">Main Page</a> - Server</h2>
 
-The server is a game server that clients (players) can join.
+The server is a game server that clients (players) can join, and is bound to
+interface <code>0.0.0.0</code> (listens on all interfaces).
 The server is ran through the command line.<br>
 Example:<br><img src="imgs/server_osx.png">
 
@@ -39,6 +45,23 @@ cd path-to-server-binary
 
 It will not run if no map is given (through --map).
 
+<h3> Server arguments: </h3>
+<pre>--map &ltmapfile&gt</pre>
+<p>
+This will set the starting map for the server.
+The file must exist and not be a folder.
+The map file will be <code>&ltmapfile&gt</code>.
+This argument is required for the server to start.
+</p>
+<pre>--port &ltport&gt</pre>
+<p>
+This will set the port to listen on. If this is not given, the default port is
+<code>4544</code>.
+</p>
+<pre>--help</pre>
+<p>
+Displays help message.
+</p>
 </body>
 
 </html>
