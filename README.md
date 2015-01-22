@@ -27,9 +27,10 @@ List of members/contributors who helped out so far:
 Github name-----------------------IRC Name
 
 JavaCakess/vividMario52-----------gatsan
-KTBMedia/K.T.B.-------------------KTB
+crumblingstatue-------------------SneakySnake
 Holiverh--------------------------Hollinski
+KTBMedia/K.T.B.-------------------KTB
 Sebbyastian-----------------------Seabasschan
 cyanboy---------------------------cyanboy
 Microcoding-----------------------rodrunner
-crumblingstatue-------------------SneakySnake
+8BitBuff--------------------------Krootushas
