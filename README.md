@@ -6,9 +6,9 @@ If you'd like to contribute to the news section of the page, it'd be appreciated
 * Everything in brackets must be replaced replaced with what corresponds with the conditions existing when you make the post.
 <pre>
       <h2 id="[day]-[month abbreviation]-[final two year digits]">[day] [month] [year]</h2>
-      <div id="news_rectangle">
+      <div class="news_rectangle">
         [POST GOES HERE]
-      <small>Posted by <em>[your github username]</em></small>
+      <span class="small">Posted by <em>[your github username]</em></span>
       </div>
 </pre>
 
@@ -26,10 +26,10 @@ List of members/contributors who helped out so far:
 
 Github name-----------------------IRC Name
 
-JavaCakess/vividMario52           gatsan
-KTBMedia/K.T.B.                   KTB
-Holiverh                          Hollinski
-Sebbyastian                       Seabasschan
-cyanboy                           cyanboy
-Microcoding                       rodrunner
-crumblingstatue                   SneakySnake
+JavaCakess/vividMario52-----------gatsan
+KTBMedia/K.T.B.-------------------KTB
+Holiverh--------------------------Hollinski
+Sebbyastian-----------------------Seabasschan
+cyanboy---------------------------cyanboy
+Microcoding-----------------------rodrunner
+crumblingstatue-------------------SneakySnake
