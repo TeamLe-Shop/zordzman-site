@@ -1,52 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> The Zordzman Wiki </title>
+    <style>
+	  .small {
+	    font-size: 0.8em;
+	  }
+	  
+	  main {
+	    float: left;
+	  }
+	  
+      body {
+        background-image: url("imgs/grass.png");
+      } 
 
-<html>
-<head>
+      aside {
+        float: right;
+      }
 
-<style>
-body
-{
-    background-color:#f0f0f0
-}
+      #rectangle {
+        width: 128px;
+        background: #e0e0e0;
+        border: 2px solid #7f7f7f;
+      }
 
-#rectangle {
-    width: 128px;
-    background: #e0e0e0;
-    border: 2px solid #7f7f7f;
-}
-</style>
+      .news_rectangle {
+        width: 500px;
+        background: grey;
+        border: 2px solid #7f0000;
+        border-radius: 25px;
+        padding: 10px 10px;
+      }
+      #contents {
+        width: 200px;
+        height: 100px;
+        background: grey;
+        border: 2px solid #000000;
+      }
+      #quote {
+        background: white;
+        border: 2px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 align=center>Zordzman Wiki</h1>
+      <h2 align=center>Main Page</h2>
+	</header>
+	<main>
+	  <nav>
+	    <div id="contents">
+          <a href="#24-oct-14">24 October 2014</a><br>
+          <a href="#25-oct-14">25 October 2014</a><br>
+          <a href="#2-nov-14">2 November 2014</a><br>
+          <a href="#23-nov-14">23 November 2014</a><br>
+          <a href="#20-dec-14">20 December 2014</a><br>
+        </div>
+	  </nav>
+      <h2 id="20-dec-14">20 December 2014</h2>
+      <div class="news_rectangle">
+        Thought I'd given up yet? Nope!<br>
+        So Hollinski's
+        <code><a href="https://github.com/Holiverh/zordzman-plus-plus/tree/entity">entity</code></a>
+        and <code><a href="https://github.com/Holiverh/zordzman-plus-plus/tree/message-processor">message-processor</a></code> branches
+        on his repo have been merged with the main one, and they are quite a nice
+        contribution.<br>
+        Right now I'm just working on killing the old <code>TCPSocket</code> from the
+        client and using <code>MessageProcessor</code> instead.
+        It's almost Christmas, and I'm on holidays, so I can work on this in peace.
+        At this rate we probably wont get it done for Christmas, so probably by late January/early February.<br><br>
 
-<title> The Zordzman Wiki </title>
-
-</head>
-
-<body>
-
-<h1 align=center>Zordzman Wiki</h1>
-<h2 align=center>Main Page</h2>
-
-<div id=rectangle>
-<h3 align=center><a href="https://github.com/TeamLe-Shop/zordzman-plus-plus">Github</a></h3>
-<hr>
-<img src="imgs/github.png">
-</div>
-
-<br><br>
-
-<div id=rectangle>
-<h3 align=center><a href="maps.html">Maps</a></h3>
-<hr>
-<img src="imgs/maps.png">
-</div>
-
-<br><br>
-
-<div id=rectangle>
-<h3 align=center><a href="server.html">Server</a></h3>
-<hr>
-<img src="imgs/server.png">
-</div>
-
-</body>
-
+        Music is being composed for Zordzman! There's currently 3 tracks (all very short):
+        <a href="zordzman/music/dunno.ogg">dunno</a>, <a href="zordzman/music/Lively.ogg">Lively</a>,
+        and <a href="zordzman/music/Ready.ogg">Ready</a>, all created in that order.<br>
+        Ready is the one I created just today. The beat in that track I've done many times
+        in real life using a table, my hand and a pen, so it was made pretty fast compared
+        to the other two.
+        Ready's beat (not the tune) sounds a bit like Space Jam to me.<br><br>
+		<span class="small">Posted by <em>gatsan</em></span>
+      </div>
+	  <h2 id="23-nov-14">23 November 2014</h2>
+	  <div class="news_rectangle">
+        Whew. Finally replaced all SDLNet code.<br>
+        If you didn't catch that, we're not using SDLNet anymore.
+        It's full of shit.<br>
+        We're using system sockets (BSD for Mac and Linux),
+        and possibly WinSock for Winjizzle.
+        <br>
+        Zordzman will be available as an Application Package in Mac!
+        This means if you're a Mac gamer you can add it to your Steam Library. Have fun!<br><br>
+		<span class="small">Posted by <em>gatsan</em></span>
+      </div>
+	  <h2 id="2-nov-14">2 November 2014</h2>
+	  <div class="news_rectangle">
+        <b>Happy 500 commits Zordzman!</b>
+		Seriously, we just reached 500 commits yesterday.<br>
+        We then looked at the past commits and found something interesting.<br>
+        Over 20% of Zordzman's commits were done in 4 days.<br>
+        <b>4 days.</b><br>
+        It was a fast and lively start, and it seems to be dying off...
+        but I wont give up.<br>
+		Here's what one of the contributers said:
+        <div id="quote">
+          We just shit out a few commits every once in a while<br>
+          Mostly you now<br>
+          <a href="https://github.com/TeamLe-Shop/zordzman-plus-plus/pulse/monthly"></a><br>
+          78 commits this month<br>
+          = less than 3 commits per day on average<br>
+          Dead project<br>
+        </div><br>
+		<span class="small">Posted by <em>gatsan</em></span>
+      </div>
+      <h2 id="25-oct-14">25 October 2014</h2>
+      <div class="news_rectangle">
+        <b>09:46</b><br>
+        -----<br>
+        I reached 4 days uptime yesterday, but my
+        brother had to turn my computer off because I ate fish.<br>...<br>
+        I have to start making some more progress for Zordzman++. Multiplayer is a confusing mess,
+        and right now I'm only working on the server loading a map and having the client and server
+        decide what to do if the client doesn't have the map or the client has a modified map.<br><br>
+		<span class="small">Posted by <em>gatsan</em></span>
+      </div>
+	  <h2 id="24-oct-14">24 October 2014</h2>
+	  <div class="news_rectangle" height=100px>
+        I'm supposed to be celebrating Hallowe'en or whatever, but I won't get a lot
+        done before it, so I'll put on a Christmas theme and hope Zordzman Multiplayer is
+        ready for all by then.<br><br>
+		<span class="small">Posted by <em>gatsan</em></span>
+      </div>
+    </main>
+	<aside>
+      <div id=rectangle>
+        <h3 align=center><a href="https://github.com/TeamLe-Shop/zordzman-plus-plus">Github</a></h3>
+        <hr>
+        <img src="imgs/github.png">
+      </div>
+	  <br><br>
+	  <div id=rectangle>
+        <h3 align=center><a href="maps.html">Maps</a></h3>
+        <hr>
+        <img src="imgs/maps.png">
+      </div>
+      <br><br>
+      <div id=rectangle>
+        <h3 align=center><a href="server.html">Server</a></h3>
+        <hr>
+        <img src="imgs/server.png">
+      </div>
+    </aside>
+  </body>
 </html>
