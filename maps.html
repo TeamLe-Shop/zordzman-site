@@ -25,12 +25,28 @@ body
 <h1 align=center>Zordzman Wiki</h1>
 <h2 align=center><a href="index.html">Main Page</a> - Maps</h2>
 
+<h3>Maps</h3>
+
 <div id=rectangle>
-<h4>Testing maps</h4>
-<pre>    <a href="kek_lvl.html">kek.lvl</a>
-    <a href="kak_lvl.html">kak.lvl</a>
-</pre>
+<a href="kak_lvl.html">
+<code>kak.lvl</code>
+</a>
+<br>
+<a href="kek_lvl.html">
+<code>kek.lvl</code>
+</a>
 </div>
+
+<h3>Level Format</h3>
+
+Currently, maps are often bearing the extension <code>.lvl</code>.<br>
+
+The first 4 bytes of the map are the width, height, x spawn position and
+y spawn position of the map.<br>
+The spawn position is where new players will spawn.<br>
+
+The rest of the data are the tiles, represented by a single byte.
+0, 1 and 2 correspond to grass, flower and water respectively.
 
 
 </body>
